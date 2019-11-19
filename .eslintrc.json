@@ -1,0 +1,30 @@
+{
+	"extends": ["airbnb", "prettier", "eslint:recommended"],
+    "plugins": ["prettier", "react"],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true,
+        "es6": true
+    },
+    // "parserOptions": {
+    //     "sourceType": "module"
+    // },
+    "parserOptions": {
+            "sourceType": "module",
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+          "experimentalObjectRestSpread": true
+        }
+      },
+	"rules": {
+		"prettier/prettier": "error",
+		"no-unused-vars": "warn",
+		"no-console": "off",
+		"func-name": "off",
+        "no-process-exit": "off",
+        "import": "true",
+        "indent": ["error", 4]
+    }
+
+}
